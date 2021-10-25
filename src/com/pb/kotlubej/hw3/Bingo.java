@@ -19,9 +19,13 @@ public class Bingo {
         break;
         }
             if (x < y) {
-                System.out.println("Мое число меньше. ");
+                System.out.println("Мое число меньше. Для продолжения игры введите новое число. Для окончания игры введите 1000  ");
             } else {
-                System.out.println("Мое число больше. ");
+                System.out.println("Мое число больше. Для продолжения игры введите новое число. Для окончания игры введите 1000  ");
+            }
+            if (y == 1000) {
+                System.out.println("Игра окончена, Вы не угадали");
+                break;
             }
             counter++;
         } while (y != x);
