@@ -46,7 +46,9 @@ public class Reader {
     }
     public void returnBook (int length, String name){
         System.out.println(name + "вернул " + length + " книги");
+
     }
+
     public void returnBook (String [] title, String name){
         String titles = Arrays.stream(title).collect(Collectors.joining(","));
         System.out.println(name + "вернул книги: " + titles);
@@ -58,5 +60,6 @@ public class Reader {
             System.out.print(books_data[i].getTitle()+ "("+ books_data[i].getAuthor()+ ", "+ books_data[i].getYear()+ "),");
         }
         System.out.print("\n");
+
     }
 }

@@ -47,6 +47,7 @@ public class Library {
             for (int j = 0; j< books.length; j++){
                 books_title[j]= books[j].getTitle();
             }
+
             readers[i].returnBook(books_title, readers[i].getName());
         }
         for (int i = 0; i<readers.length; i++)
