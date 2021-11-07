@@ -25,4 +25,12 @@ public class Horse extends Animal{
         super.sleep();
         System.out.println(getAnimal() + " громко спит");
     }
+
+    @Override
+    public String toString() {
+        return "Horse{" +
+                "скорость " + speed +
+                '}';
+    }
 }
+

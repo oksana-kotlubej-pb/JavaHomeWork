@@ -1,10 +1,13 @@
 package com.pb.kotlubej.hw6;
 
 public class Veterinarian {
-    static {
-        System.out.println("Veterinarian initializing");
+    public Veterinarian() {
+        System.out.println( "Объект класса Veterinarian создан!");
     }
-public static void treatAnimal(Animal animal) {
+    public static void treatAnimal(Animal animal) {
         System.out.println(animal.getFood() + " " + animal.getLocation());
+    }
+    public void on() {
+        System.out.println( "Я ваш ветеринар сегодня!");
     }
 }

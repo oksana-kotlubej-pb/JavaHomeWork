@@ -1,5 +1,7 @@
 package com.pb.kotlubej.hw6;
 
+import java.util.Objects;
+
 public class Cat extends Animal{
     private int age;
 
@@ -26,4 +28,25 @@ public class Cat extends Animal{
         System.out.println(getAnimal() + " постоянно спит");
         super.sleep();
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return age == cat.age;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(age);
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "возраст " + age +
+                '}';
+    }
 }
+

@@ -12,6 +12,7 @@ public class Animal {
         this.location = location;
     }
 
+
     public String getAnimal() {
         return animal;
     }
@@ -26,6 +27,7 @@ public class Animal {
     public void setFood(String food) {
         this.food = food;
     }
+
     public String getLocation(){
         return location;
     }
